@@ -1,0 +1,27 @@
+# Core ML / Deep Learning
+torch==2.0.1+cu118           
+torchvision==0.15.2+cu118
+torchaudio==2.0.2+cu118
+--index-url https://download.pytorch.org/whl/cu118
+
+# Hugging Face ecosystem
+transformers>=4.45.0            # Cần >=4.45 để hỗ trợ tốt Qwen2.5
+accelerate>=0.33.0              # Tối ưu device_map, multi-GPU/CPU
+bitsandbytes>=0.43.3            # Quantization 4-bit/8-bit (rất cần cho VRAM thấp)
+
+# Multimodal & Image processing
+Pillow>=10.0.0                  # PIL - xử lý ảnh cơ bản (Image.open, resize, etc.)
+sentence-transformers>=3.0.0    # Tạo embedding ngữ nghĩa (all-MiniLM-L6-v2)
+
+# UI & Interface
+gradio>=4.44.0                  # Tạo giao diện web chat + upload ảnh
+
+# Sentiment & NLP helpers
+# (model twitter-roberta-base-sentiment-latest dùng pipeline nên transformers đã bao gồm)
+# Không cần cài riêng nếu transformers đã có
+
+# Utilities (thường có sẵn trong Colab, nhưng liệt kê để hoàn chỉnh)
+numpy>=1.26.0
+json                            # built-in, không cần pip
+datetime                        # built-in
+os                              # built-in
