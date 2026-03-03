@@ -4,15 +4,13 @@
 
 Dự án được xây dựng hoàn toàn trên **Google Colab** (dễ replicate), sử dụng kỹ thuật quantization 4-bit để chạy mô hình lớn trên GPU miễn phí.
 
-## Mục tiêu dự án (liên kết với vị trí ứng tuyển)
+## Mục tiêu dự án 
 
 - Nghiên cứu & đánh giá các mô hình LLM hiện đại (Qwen2.5-Instruct) cho tiếng Việt.
-- Xây dựng POC (Proof of Concept) chatbot đa năng: chat text + upload ảnh → mô tả ảnh + phân tích cảm xúc + gợi ý sáng tạo.
+- Xây dựng chatbot đa năng: chat text + upload ảnh → mô tả ảnh + phân tích cảm xúc + gợi ý sáng tạo.
 - Đánh giá hiệu quả: tốc độ phản hồi, độ chính xác cảm xúc, khả năng tiết kiệm thời gian so với chat thủ công.
 - Tài liệu hóa workflow, code sạch, dễ mở rộng → sẵn sàng chia sẻ cho team nghiệp vụ.
 - Kết hợp GenAI tools (Hugging Face Transformers, Gradio) với prototype giao diện web đơn giản.
-
-→ Phù hợp với yêu cầu vị trí: **nghiên cứu ứng dụng AI thực tế**, **xây dựng POC/use case**, **đánh giá hiệu quả**, **tài liệu hóa hướng dẫn**.
 
 ## Tính năng chính
 
