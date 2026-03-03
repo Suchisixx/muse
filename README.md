@@ -1,10 +1,10 @@
-# AI Muse - Vietnamese LLM Chatbot with Emotional Insight & Multimodal Support
+## 1. Giới thiệu
 
 **AI Muse** là một chatbot thông minh dựa trên Large Language Model (LLM), được tối ưu hóa cho tiếng Việt, kết hợp phân tích cảm xúc (sentiment analysis) và khả năng xử lý hình ảnh (multimodal) để hỗ trợ sáng tạo, tư vấn cảm xúc và gợi ý ý tưởng.
 
 Dự án được xây dựng hoàn toàn trên **Google Colab** (dễ replicate), sử dụng kỹ thuật quantization 4-bit để chạy mô hình lớn trên GPU miễn phí.
 
-## Mục tiêu dự án 
+## 2. Mục tiêu dự án 
 
 - Nghiên cứu & đánh giá các mô hình LLM hiện đại (Qwen2.5-Instruct) cho tiếng Việt.
 - Xây dựng chatbot đa năng: chat text + upload ảnh → mô tả ảnh + phân tích cảm xúc + gợi ý sáng tạo.
@@ -12,7 +12,7 @@ Dự án được xây dựng hoàn toàn trên **Google Colab** (dễ replicate
 - Tài liệu hóa workflow, code sạch, dễ mở rộng → sẵn sàng chia sẻ cho team nghiệp vụ.
 - Kết hợp GenAI tools (Hugging Face Transformers, Gradio) với prototype giao diện web đơn giản.
 
-## Tính năng chính
+## 3. Tính năng chính
 
 - **Chatbot tiếng Việt thông minh** sử dụng Qwen2.5-1.5B-Instruct (quantized 4-bit) – nhanh, tiết kiệm VRAM (~2-3GB).
 - **Phân tích cảm xúc thời gian thực** (dùng twitter-roberta-base-sentiment-latest) để phát hiện buồn/vui/stress → gợi ý an ủi hoặc ý tưởng phù hợp.
@@ -21,7 +21,7 @@ Dự án được xây dựng hoàn toàn trên **Google Colab** (dễ replicate
 - **Giao diện Gradio** thân thiện: chat box + upload ảnh + lịch sử chat.
 - **Lưu lịch sử chat** dưới dạng JSON để phân tích sau (đánh giá use case dài hạn).
 
-## Công nghệ & Stack sử dụng
+## 4. Công nghệ & Stack sử dụng
 
 | Phần              | Công cụ / Thư viện                          | Mô tả                                                                 |
 |-------------------|---------------------------------------------|-----------------------------------------------------------------------|
@@ -36,7 +36,7 @@ Dự án được xây dựng hoàn toàn trên **Google Colab** (dễ replicate
 
 Yêu cầu phần cứng: GPU T4 (Colab free) hoặc tương đương.
 
-## Cài đặt & Chạy local/Colab
+## 5. Cài đặt & Chạy local/Colab
 
 1. Clone repo:
    ```bash
@@ -44,6 +44,7 @@ Yêu cầu phần cứng: GPU T4 (Colab free) hoặc tương đương.
    cd muse
 
 2. Cài dependencies (dùng requirements.txt): pip install -r requirements.txt
-Hoặc chạy trực tiếp trong Colab:
+3. Hoặc chạy trực tiếp trong Colab:
+ ```bash
 !pip install -q torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 !pip install -q --upgrade transformers accelerate bitsandbytes gradio sentence-transformers pillow numpy
